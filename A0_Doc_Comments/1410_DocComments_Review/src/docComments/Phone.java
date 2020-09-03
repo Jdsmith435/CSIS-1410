@@ -1,7 +1,7 @@
 package docComments;
 /**
  * 
- * @author ma0012
+ * @author Mike Awada, Jeremiah Smith
  *
  */
 public class Phone {
@@ -10,7 +10,10 @@ public class Phone {
 	private double batteryLife;
 	private String idNumber;
 	private static int count = 0;
+	
 	/**
+	 * Assigns the passed parameters to the attributes of this class
+	 * 
 	 * @param makeBy
 	 * @param opSystem
 	 * @param batteryLife
@@ -23,24 +26,28 @@ public class Phone {
 		count++;
 		idNumber = "123456" + String.valueOf(count);
 	}
+	
 	/**
 	 * @return the makeBy
 	 */
 	public String getMakeBy() {
 		return makeBy;
 	}
+	
 	/**
 	 * @return the opSystem
 	 */
 	public String getOpSystem() {
 		return opSystem;
 	}
+	
 	/**
 	 * @return the batteryLife
 	 */
 	public double getBatteryLife() {
 		return batteryLife;
 	}
+	
 	/**
 	 * @return the idNumber
 	 */
@@ -54,10 +61,11 @@ public class Phone {
 	public static int getCount() {
 		return count;
 	}
+	
 	@Override
 	public String toString() {
 		return makeBy + ", Operating System: " + opSystem + ", BatteryLife: " + batteryLife + ", idNumber= "
-				+ idNumber + "]";
+				+ idNumber;
 	}
 	
 	

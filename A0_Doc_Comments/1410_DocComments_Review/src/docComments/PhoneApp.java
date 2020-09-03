@@ -13,7 +13,7 @@ public class PhoneApp {
 
 	/**
 	 * Main Method constructs ArrayList and adds four phones using the add method. A menu prompt is called
-	 * 			followed by a switch. 
+	 * 			followed by a switch that recieves the user's decisision. 
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -27,13 +27,11 @@ public class PhoneApp {
 	    phones.add(new Phone("LG", "android", 4.50));
 	    phones.add(new Phone("Morotrola","android", 5.00));
 	    
-	    do
-	       {
+	    do {
 	          menuPrompt(); //This will prompt the user to choose
 	          selection = input1.nextInt();//the selection will be saved in the selection variable
       
-	          switch (selection)
-	          {
+	          switch (selection){
 	          	case 1:
 	        	   displayPhones(phones);
 		           break;
@@ -147,8 +145,7 @@ public class PhoneApp {
         String idPhone2 = input4.nextLine();
         int del = -2;
         for (Phone el:phones)
-     	   if (el.getIdNumber().equals(idPhone2))
-     	   {
+     	   if (el.getIdNumber().equals(idPhone2)){
      		  del = phones.indexOf(el);  
       	   }
         return del;
