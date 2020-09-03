@@ -5,22 +5,26 @@ import java.util.Scanner;
 
 /**
  * Gives user a menu in which they can handle data about phone products.
- * @author Mike Awada
+ * @author Mike Awada, Jeremiah Smith
  *
  */
 
 public class PhoneApp {
 
 	/**
-	 * Main Method constructs ArrayList and adds four phones using the add method. A menu prompt is called
-	 * 			followed by a switch that recieves the user's decisision. 
+	 * Main Method gives a user menu promts while handling each phone object.
+	 * 
+	 * An ArrayList is created that adds four Phone objects. The menuPromt method is called
+	 * which outputs a menu to the user. The user input is passed into a switch and the method 
+	 * will correspond with the input. 
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		
-		
 		int selection;
 	    Scanner input1 = new Scanner(System.in); //Creating an object of class Scanner
+	    
 	    ArrayList<Phone> phones = new ArrayList<Phone>();
 	    phones.add(new Phone("iphone", "ios", 3.00));
 	    phones.add(new Phone("Samsung", "android", 2.00));

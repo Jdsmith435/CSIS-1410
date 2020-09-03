@@ -14,6 +14,9 @@ public class Phone {
 	/**
 	 * Assigns the passed parameters to the attributes of this class
 	 * 
+	 * Phone takes three parameters: String make, String opSystem, and double batteryLife.
+	 * These are assigned to the class attributes. Getters are used 
+	 * 
 	 * @param makeBy
 	 * @param opSystem
 	 * @param batteryLife
