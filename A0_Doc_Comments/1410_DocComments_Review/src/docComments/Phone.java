@@ -1,5 +1,6 @@
 package docComments;
 /**
+ * Creates phone object when called in PhoneApp.java
  * 
  * @author Mike Awada, Jeremiah Smith
  *
